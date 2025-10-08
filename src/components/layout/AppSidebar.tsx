@@ -70,12 +70,12 @@ export function AppSidebar() {
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => (
+              {items.map((item, index) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <Link href={item.url}>
-                      <item.icon className="text-gray-400" size={60} />
-                      <span className="text-gray-400 font-medium ">{item.title}</span>
+                      <item.icon className={index === 0 ? "text-primary" : "text-gray-400"} size={72} />
+                      <span className={index === 0 ? "text-primary font-medium " : "text-gray-400 font-medium "}>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
