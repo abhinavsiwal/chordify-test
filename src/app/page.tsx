@@ -5,6 +5,7 @@ import { DateRangePicker } from "@/components/ui/data-range-picker";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import DashboardCard from "@/components/common/DashboardCard";
 import { ChartNoAxesColumnDecreasing,Minus } from 'lucide-react';
+import SpendOrdersChart from "@/components/overview/SpendOrdersChart";
 
 
 export default function Home() {
@@ -96,6 +97,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+            <SpendOrdersChart />
         </div>
       </div>
      
